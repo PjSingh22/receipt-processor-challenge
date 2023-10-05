@@ -1,23 +1,15 @@
-# Installing and Running
-
-## Prerequisites
-- node.js v16.17.0 or later
-
 ## Installation
-If you don't have node.js installed, you can either download [nvm](https://www.freecodecamp.org/news/node-version-manager-nvm-install-guide/) (node version manager) or install node.js directly from the [node.js website](https://nodejs.org/en/download/)(get LTS).
-
-Once you have node.js installed, you can install the dependencies by running `npm install` in the root directory of the project.
-
-## Running
-To run the project, you can either install nodemon globally (`npm install -g nodemon`) and run `nodemon server.js` in the root directory of the project, or you can run `node server.js` in the root directory of the project to start the server.
-
-You can then send requests to the server using the endpoints described further down in this README.
-
+run these commands in your terminal
+```bash
+docker pull pjsingh22/fetch-assessment:latest
+docker run -d -p 3000:3000 pjsingh22/fetch-assessment:latest
+```
+Then call the endpoints in postman.
 ## Other Notes
-I used 4 receipt JSON files to test the endpoints. They are located in the `example` directory. I also used Postman to test the endpoints.
-
-Explination of the code is provided in the comments of the code itself.
-
+I also deployed it if you'd like to use the deployed version
+```bash
+https://fetch-assessment.fly.dev/
+```
 # Receipt Processor
 
 Build a webservice that fulfils the documented API. The API is described below. A formal definition is provided
